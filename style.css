@@ -1,0 +1,222 @@
+/* General Reset */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Font and General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+/* Gradient Background for Header */
+.bg-gradient {
+    background: linear-gradient(135deg, #A0D8FF, #5F7D8E); /* Soft Blue Gradient */
+    color: rgb(252, 252, 252);
+}
+
+/* Navbar Styling */
+.navbar {
+    margin-bottom: 20px;
+    background-color: #11314d; /* Darker Blue for better contrast */
+    border-radius: 0; /* Removed border-radius to make it flush with the top */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: rgb(255, 255, 255);
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar-nav .nav-link {
+    color: #c2bdbd; /* Light Grey for better contrast */
+    font-size: 1.1rem;
+    padding: 12px 20px;
+    text-align: center;
+}
+
+.navbar-nav .nav-link.active {
+    color: #A0D8FF;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #A0D8FF;
+}
+
+.navbar-nav .nav-link {
+    color: #948e8e; /* Warna teks lebih gelap */
+    font-size: 1.1rem;
+    padding: 12px 20px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #A0D8FF; /* Tetap menggunakan efek hover warna biru lembut */
+}
+
+/* Mengurangi jarak antara navbar dan header */
+.navbar {
+    margin-bottom: 0px; /* Kurangi jarak bawah navbar */
+}
+
+/* Mengurangi jarak padding pada header */
+header {
+    padding: 40px 0; /* Kurangi padding atas dan bawah header */
+}
+
+/* Header Section Styling */
+header {
+    padding: 60px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: rgb(35, 10, 94); /* Ganti warna teks menjadi biru */
+}
+
+header p {
+    font-size: 1.3rem;
+    color: rgb(32, 8, 87); /* Ganti warna teks menjadi biru */
+}
+
+/* Additional Personal Information Styling */
+section.container .list-group-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+
+section.container .list-group-item strong {
+    color: #2A4D71; /* Blue color for labels */
+}
+
+
+/* Riwayat Pendidikan Section Styling */
+.list-group-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+
+.list-group-item h5 {
+    font-size: 1.2rem;
+    color: #2A4D71;
+    font-weight: 600;
+}
+
+.list-group-item p {
+    font-size: 1rem;
+    color: #555555;
+}
+
+/* Ensure all gallery images have the same size */
+.card-img-top {
+    width: 100%;
+    height: 250px; /* Atur tinggi gambar agar konsisten */
+    object-fit: cover; /* Pastikan gambar tetap terpotong secara proporsional */
+}
+
+/* Contact Form Section */
+section.container form {
+    max-width: 600px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+section.container form .form-control {
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+section.container form button {
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    padding: 10px;
+    background-color: #2A4D71;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+section.container form button:hover {
+    background-color: #A0D8FF;
+}
+
+/* Contact Information Section */
+section.container .contact-info {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+section.container .contact-info p {
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+section.container .contact-info p a {
+    color: #2A4D71;
+    text-decoration: none;
+}
+
+section.container .contact-info p a:hover {
+    text-decoration: underline;
+}
+
+section.container .contact-info p i {
+    font-size: 1.5rem;
+    color: #2A4D71;
+}
+
+/* Footer Section Styling */
+footer {
+    background-color: #2A4D71;
+    color: white;
+    padding: 30px 0;
+    margin-top: 40px; /* Added margin to create space from the bottom */
+}
+
+footer p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+    }
+
+    section.container .contact-info p {
+        font-size: 1rem;
+    }
+}
